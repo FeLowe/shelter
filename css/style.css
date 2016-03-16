@@ -16,3 +16,25 @@ li {
 .catlist p {
   font-family: serif;
 }
+
+@media screen and (max-width: 480px) {
+  .catlist {
+    width: 95%;
+    float: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .catlist {
+    width: 45%;
+
+  }
+}
+
+@media print {
+  .catlist {
+    width: 45% !important;
+  }
+  li {
+    color: black !important;
+  }
+}
